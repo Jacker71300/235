@@ -1,13 +1,13 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #aba7ab;
+    background-color: #9999a1;
 }
 
 main{
     width: 75vw;
     margin: 0 auto;
-    background-color: #fffffc
+    background-color: #e6e6e9
 }
 
 iframe{
@@ -21,14 +21,14 @@ header{
     margin: 0 auto;
     text-align: center;
     padding: .5em 0;
-    background-color: #fffffc;
+    background-color: #e6e6e9;
 }
 
 footer{
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fffffc;
+    background-color: #e6e6e9;
 }
 
 #profile_picture{
@@ -43,12 +43,13 @@ footer{
     font-size: 15pt;
     text-align: justify;
     padding-right: 2em;
-    padding-top: 4em;
+    padding-top: 2vh;
     padding-left: 350px;
 }
 
+/* Measured in width to "properly" adjust to different screen sizes*/
 #padding{
-    padding-top: 100px;
+    padding-top: 8vw;
 }
 
 dt {
@@ -58,7 +59,7 @@ dt {
     text-align: right;
     margin-right: 1em;
     font-weight: bold;
-    color: #1a535c;
+    color: #9381ff;
 }
 
 dd {
