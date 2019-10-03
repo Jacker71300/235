@@ -42,7 +42,8 @@ All controls will be accessable via clicking buttons on the screen with some hot
 
 ## 7. Screenshots
 
-insert later
+![Mocukup of the menu](media/terriblescreenshot.png)
+![Mocukup of the menu](media/terriblemenu.png)
 
 ## 8. Other
 
