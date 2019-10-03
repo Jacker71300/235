@@ -1,0 +1,30 @@
+/* 
+ ***************** Formatting for Proposal Page ********************
+*/
+main{
+    color: #2d2d28;
+}
+
+main h1{
+    font-size: 50pt;
+    border-bottom: 1px solid #2d2d28;
+}
+
+main h2{
+    font-size: 30pt;
+}
+
+main h3{
+    font-size: 20pt;
+    padding-left: 2em;
+}
+
+main p{
+    font-size: 14pt;
+    padding-left: 4em;
+}
+
+main img{
+    width: 40vw;
+    padding: .6em;
+}

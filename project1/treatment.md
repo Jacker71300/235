@@ -10,7 +10,7 @@ Action/Tower-Defense
 
 ## 3. Platform
 
-Destop only.
+Desktop only.
 
 ## 4. Story
 

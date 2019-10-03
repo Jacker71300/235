@@ -1,0 +1,16 @@
+#title{
+    font-size: 50pt;
+    border-bottom: 1px solid #2d2d28;
+}
+
+.commit{
+    border-bottom: 1px solid #2d2d28;
+}
+
+.commit h2{
+    font-size: 30pt;
+}
+
+.commit p{
+    font-size: 14pt;
+}
