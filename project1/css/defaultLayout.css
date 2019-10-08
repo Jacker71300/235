@@ -3,6 +3,7 @@
 */
 html{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
 }
 
 /* 
@@ -49,12 +50,12 @@ a:visited{
 }
 
 header{
-    width: 100%;
     background-color: #2d2d28;
     color: #ffffff;
     padding: 0em;
     display: grid;
     grid-template-columns: 5% auto 35em;
+    margin: 0em;
 }
 
 header h1{
@@ -67,12 +68,13 @@ header h1{
 */
 
 body{
-    background-color: #c7cb85;
+    background-color: #2b2d42;
     padding: 0px;
+    margin: 0px;
 }
 
 main{
-    width: 85%;
+    width: 80%;
     padding: 2em;
     margin: auto;
     background-color: #d4cdc3;
@@ -89,4 +91,58 @@ footer{
     padding: 1em;
     font-size: 14pt;
     text-align: center;
+}
+
+/* 
+ ***************** Mobile ********************
+*/
+
+@media screen and (max-width: 1000px){
+    /* 
+    ***************** Header and Navigation ********************
+    */
+    #navContainer{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        grid-row: 2;
+    }
+
+    .navButton{
+        padding: .5em;
+        text-align: center;
+    }
+
+    .currentNav{
+        padding: .5em;
+        text-align: center;
+    }
+
+    header{
+        grid-template-columns: 100%;
+        align-content: center;
+    }
+
+    header h1{
+        padding: .3em 1em;
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+    }
+
+    /* 
+    ***************** Main Content ********************
+    */
+
+    main{
+        width: 100%;
+        padding: 3em;
+        margin-right: 0em;
+    }
+
+    body{
+        width: 100%;
+        padding: 0em;
+        margin: 0em;
+    }
 }
