@@ -17,14 +17,14 @@
 
 .pictureLeft{
     float: left;
-    height: 350px;
+    height: 300px;
     width: 600px;
     padding: 1.5em 2em 1em 0em;
 }
 
 .pictureRight{
     float: right;
-    height: 350px;
+    height: 300px;
     width: 600px;
     padding: 1.5em 0em 1em 2em;
 }
@@ -41,4 +41,48 @@
     grid-area: content2;
     font-size: 18pt;
     margin: 1em;
+}
+
+@media screen and (max-width: 1000px){
+    /* 
+    ***************** Home Page Content ********************
+    */
+    #bodyContainer{
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "content1"
+        "content2";
+    }
+
+    .pictureLeft{
+        float: none;
+        margin: auto;
+        height: auto;
+        width: 80vw;
+        padding: 0em 0em 0em 0em;
+    }
+
+    .pictureRight{
+        float: none;
+        margin: auto;
+        height: auto;
+        width: 80vw;
+        padding: 0em 0em 0em 0em;
+    }
+
+    #content1{
+        text-align: justify;
+        grid-area: content1;
+        font-size: 18pt;
+        margin: auto;
+        padding: 1em;
+    }
+
+    #content2{
+        text-align: justify;
+        grid-area: content2;
+        font-size: 18pt;
+        margin: auto;
+    }
 }
