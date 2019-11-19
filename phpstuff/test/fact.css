@@ -1,0 +1,43 @@
+#fact{
+    color: #e32323;
+    font-size: 24pt;
+    height: 3rem;
+}
+
+body{
+    background-color: blue;
+}
+
+main{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+h1{
+    font-size: 30pt;
+}
+
+h2{
+    font-size: 27pt;
+}
+
+form{
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+#submit {
+    width:200px;
+    height:50px;
+    border:none;
+    cursor:pointer;
+    border: 1px solid gray;
+    background-color:gray;
+    color:whitesmoke;
+}
