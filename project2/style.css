@@ -1,0 +1,137 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    background-image: url("images/Earth_Flag.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70vw;
+    background-position-y: 12vh;
+}
+
+nav,
+aside,
+article {
+    padding: .5rem;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: 20vh 40vh 40vh;
+    grid-template-columns: 15vw 30vw 10vw 30vw 15vw;
+    grid-template-areas: 
+        "leftMargin  header  header  header      rightMargin"
+        "leftMargin  base    switch  conversion  rightMargin"
+        "leftMargin  amount  submit  output      rightMargin";
+}
+
+#leftMargin{
+    grid-area: leftMargin;
+    background-color: #222;
+}
+
+#rightMargin{
+    grid-area: rightMargin;
+    background-color: #222;
+}
+
+#switch{
+    grid-area: switch;
+    background-image: url("images/switch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8vw;
+    width: 10vw;
+    height: 10vw;
+    align-self: center;
+    border: 3px solid #000;
+}
+
+#submit{
+    grid-area: submit;
+    background-image: url("images/convert.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8vw;
+    width: 10vw;
+    height: 10vw;
+    align-self: center;
+    border: 3px solid #000;
+}
+
+#header{
+    grid-area: header;
+    background-color: #639FAB;
+    margin: 0 auto;
+    width: 70vw;
+    text-align: center;
+    font-size: 12vh;
+    padding-top: 2vh;
+}
+
+#base{
+    grid-area: base;
+    background-color: #BBCDE5;
+    width: 15vw;
+    height: 12vh;
+    align-self: center;
+    margin-left: 7.5vw;
+    font-size: 8vh;
+    border: 3px solid #000;
+}
+
+#amount{
+    grid-area: amount;
+    background-color: #BBCDE5;
+    width: 15vw;
+    height: 12vh;
+    align-self: center;
+    margin-left: 7.5vw;
+    font-size: 8vh;
+    border: 3px solid #000;
+}
+
+#conversion{
+    grid-area: conversion;
+    background-color: #BBCDE5;
+    width: 15vw;
+    height: 12vh;
+    align-self: center;
+    margin-left: 7.5vw;
+    font-size: 8vh;
+    border: 3px solid #000;
+}
+
+#output{
+    grid-area: output;
+    background-color: #BBCDE5;
+    width: 15vw;
+    height: 12vh;
+    align-self: center;
+    margin-left: 7.5vw;
+    font-size: 8vh;
+    border: 3px solid #000;
+}
+
+#filler{
+    grid-area: filler;
+    background-color: #639FAB;
+}
+
+/*
+#222
+#FFF
+#1C5D99
+#639FAB
+#BBCDE5
+*/

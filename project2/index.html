@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <script src="javascript/exchange.js"></script>
-    <p id="response"></p>
+    <div id="wrapper">
+        <h1 id="header">
+            Currency Converter-inator
+        </h1>
+
+        <div id="leftMargin"></div>
+        <div id="rightMargin"></div>
+
+        <div id="submit"></div>
+        <div id=switch></div>
+
+        <script src="javascript/exchange.js"></script>
+        <select name="base" id="base"></select>
+        <select name="conversion" id="conversion"></select>
+        <input name="amount" id="amount" type="text">
+        <p id="output"></p>
+    </div>
 </body>
+
 </html>
