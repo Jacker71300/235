@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/portfolio.css">
+    <meta charset="UTF-8">
+    <title>Jack Hoffman</title>
+</head>
+<body>
+    <header id="title">
+        <h1>Jack Hoffman</h1>
+    </header>
+
+    <!--<a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>-->
+    <main>
+        <div id="intro">
+            <img src="images/headshot.jpg" alt="Headshot" id="headshot">
+            <p id="bio">Hi! I'm Jack and I am a 2<sup>nd</sup> year Game Design and Development Student at Rochester Institute of Technology.
+                I'm very interested in the level and encounter design aspects of the video games industry.
+                I also have a large passion for music, especially in film and media.</p>
+        </div>
+
+        <div id="buttonWrapper">
+            <a href="media/resume.pdf" id="resume">Resume</a>
+            <a href="#contactForm" id="contact">Contact Me</a>
+        </div>
+
+        <h2>Recent Projects</h2>
+        <hr>
+
+        <div id="projectWrapper">
+            <div class="project">
+                <h3>Color Roller</h3>
+                <iframe width="400" src="https://www.youtube.com/embed/3t2M_z4_-sQ" allowfullscreen></iframe>
+                <a href="https://github.com/Jacker71300/Games4ACause" target="_blank">Github</a>
+                <p>Color Roller is a game that was developed for the 2019 Games 4 A Cause game jam.
+                    It was created over the course of 24 hours in November of 2019 and was created by a team of 4.
+                    Color Roller is a physics-based, 2D puzzle game in which a player is given very minimal information on the mechanics of the game.
+                    The levels were designed in order to help facilitate the learning of mechanics one at a time and then combined them into a more cohesive game.
+                    Throughout the project, I was designated as the lead developer and focused on creating the core mechanics that every level was based off of.
+                </p>
+            </div>
+            <div class="project">
+                <h3>Gróv</h3>
+                <img src="images/GrovEnemy.gif" alt="A boss from the game Gróv">
+                <a href="https://github.com/jzaia18/Grov" target="_blank">Github</a>
+                <p>Gróv was a project that I worked on for about the length of 2 months in early 2019.
+                    It is designed as a rogue-like, dungeon crawler that is procedurally generated on every playthrough.
+                    I was the main designer and nearing the end of the development, I was then put on boss encounter design.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+        
+        <label>Name</label>
+        <input name="name" placeholder="Type Here">
+        
+        <label>Email</label>
+        <input name="email" type="email" placeholder="person@sample.com">
+        
+        <label>Message</label>
+        <textarea name="message" placeholder="Type Here"></textarea>
+        
+        <input id="submit" name="submit" type="submit" value="Submit">
+    
+        </form>
+        
+        <!--<?php   
+        // ** Form validation code **
+        // We will use the $_POST "super global" associative array to extract the values of the form fields
+        // #1 - was the submit button pressed?
+        if (isset($_POST["submit"])){ 
+            $to = "jwh2998@rit.edu"; // !!! REPLACE WITH YOUR EMAIL !!!
+            
+            // #2 - if a value for the `email` form field is missing, give a default value
+            // else, use the value from the form field
+                $from = empty(trim($_POST["email"])) ? "noemail@sample.com" : sanitize_string($_POST["email"]);
+                
+                $subject = "Web Form";
+                
+                // #3 - same as above, except with the `message` form field
+                $message = empty(trim($_POST["message"])) ?  "No message" : sanitize_string($_POST["message"]);
+                
+                // #4 - same as above, except with the `name` form field
+                $name = empty(trim($_POST["name"])) ? "No name" : sanitize_string($_POST["name"]);
+                
+                $headers = "From: $from" . "\r\n";
+                
+                // #6 - add the user's name to the end of the message
+                $message .= "\n\n - $name";
+
+                // #8 - mail returns false if the mail can't be sent
+                $sent = mail($to,$subject,$message,$headers);
+                if(!$sent){
+
+                }
+        }
+
+        // #9 - this handy helper function is very necessary whenever
+        // we are going to put user input onto a web page or a database
+        // For example, if the user entered a <script> tag, and we added that <script> tag to our HTML page
+        // they could perform an XSS attack (Cross-site scripting)
+        function sanitize_string($string){
+        $string = trim($string);
+        $string = strip_tags($string);
+        return $string;
+        }
+        ?>-->
+
+    </main>
+
+
+    <footer>
+       <div id="left">Jack Hoffman 2019</div>
+       <div id="right">Rochester Institute of Technology</div> 
+    </footer>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

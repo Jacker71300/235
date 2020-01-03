@@ -1,0 +1,219 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 55vw;
+    margin: auto;
+}
+
+#title{
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#title h1{
+    font-size: 5em;
+    color: white;
+    background-image: url("../images/titleBackground.jpg");
+    padding: .75em;
+    margin: 0px;
+}
+
+#intro{
+    padding-top: 1em;
+    display: grid;
+    grid-template-areas: 
+    "headshot bio";
+    grid-template-columns: 300px auto;
+    grid-gap: 2em;
+}
+
+#headshot{
+    grid-area: headshot;
+    height: auto;
+    width: 300px;
+}
+
+#bio{
+    grid-area: bio;
+    padding-top: .5em;
+    padding-left: .5em;
+    font-size: 20pt;
+}
+
+#resume, #contact{
+    color: white;
+    font-size: 22pt;
+    text-decoration: none;
+    background-color: #0022ff;
+    padding: .5em 1em;
+    text-align: center;
+    margin: auto;
+}
+
+#resume{
+    margin-right: 0em;
+}
+
+#contact{
+    margin-left: 0em;
+}
+
+#buttonWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+/*Styles for the projects section*/
+h2{
+    padding-top: .25em;
+    font-size: 30pt;
+    text-align: center;
+}
+
+#projectWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.project{
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "video video video"
+    "git   git   git"
+    "desc  desc  desc";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 300px 4em auto;
+}
+
+.project iframe{
+    grid-area: video;
+    padding: 0px;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+
+.project img{
+    grid-area: video;
+    padding: 0px;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+
+.project a{
+    grid-area: git;
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    background-color: #0022ff;
+    padding: .5em 1em;
+    text-align: center;
+    margin: auto;
+}
+
+.project p{
+    grid-area: desc;
+    margin-top: 1em;
+    font-size: 16pt;
+}
+
+.project h3{
+    grid-area: title;
+    font-size: 2em;
+    text-align: center;
+}
+
+.pad{
+    grid-area: pad;
+}
+
+.space{
+    grid-area: spc;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16pt;
+    color: white;
+    background-image: url("../images/titleBackground.jpg");
+    padding: .75em;
+    margin: 0px;
+}
+
+#right{
+    text-align: right;
+    padding-right: 2em;
+}
+
+#left{
+    text-align: left;
+    padding-left: 2em;
+}
+
+#contactForm{
+    display: grid;
+    width: 40vw;
+    font-size: 16pt;
+    grid-template-rows: 1em 1em 1em 1em 1em 10em 1em;
+    grid-gap: .5em;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+/*For mobile/small screens*/
+@media screen and (max-width: 1250px){
+    main{
+        width: 75vw;
+    }
+
+    #projectWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+    }
+
+    #intro{
+        padding-top: 1em;
+        display: grid;
+        grid-template-areas: 
+        "headshot" 
+        "bio";
+        grid-template-columns: auto;
+        grid-gap: 2em;
+   }
+
+   #headshot{
+        grid-area: headshot;
+        height: 400px;
+        width: auto;
+        margin: auto;
+    }
+
+    #bio{
+        grid-area: bio;
+        margin: auto;
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        width: 80vw;
+    }
+}
